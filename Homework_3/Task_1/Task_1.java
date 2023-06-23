@@ -1,4 +1,4 @@
-package Homeworks.Homework_3;
+package Homeworks.Homework_3.Task_1;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,7 +26,7 @@ public class Task_1 {
         double maxPrice = 0;
         String substring = "high";
 
-        for (Product product: productList) {
+        for (Product product : productList) {
             if (product.getSort().equals(1) || product.getSort().equals(2)) {
                 if (product.getName().contains(substring) && product.getPrice() > maxPrice) {
                     maxPrice = product.getPrice();
